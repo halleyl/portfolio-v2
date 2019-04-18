@@ -1,0 +1,146 @@
+// SCSS variables
+
+$white: #FFFFFF;
+$ltgray: #EEEEEE;
+$dkgray: #333333;
+$teal: #07B8B6;
+$plum: #690A52;
+
+$fonts: 'Roboto', sans-serif;
+
+// Basic normalization
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-image: url('../images/splash-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  a {
+    color: $dkgray;
+    text-decoration: none;
+    h1 {
+      img {
+        display: inline-block;
+        width: 50%;
+        margin: 25%;
+      }
+    }
+    h2 {
+      font-family: $fonts;
+      font-weight: 100;
+      font-size: 1.25rem;
+      margin: -47% auto 0;
+      padding-bottom: 40%;
+      color: $dkgray;
+    }
+  }
+}
+
+nav {
+  #menu {
+    z-index: 2;
+    width: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  ul {
+    display: none;
+    flex-direction: column;
+    background-color: $plum;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem 0;
+    li {
+      list-style: none;
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 2rem;
+        img {
+          width: 30px;
+        }
+        p {
+          font-family: $fonts;
+          color: $white;
+          font-weight: 300;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.blurb {
+  font-family: $fonts;
+  font-weight: 300;
+  padding: 2rem 2rem 0;
+  p {
+    padding-bottom: 1rem;
+    color: $dkgray;
+  }
+}
+
+.links {
+  padding: 2rem;
+  figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 3rem;
+    img {
+      width: 75px;
+    }
+    figcaption {
+      padding-left: 2rem;
+      a {
+        color: $dkgray;
+        text-decoration: none;
+        h3 {
+          font-family: $fonts;
+          font-weight: 100;
+          font-size: 1.5rem;
+        }
+        p {
+          font-family: $fonts;
+          font-weight: 300;
+          color: $dkgray;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $plum;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  p {
+    color: $white;
+    font-family: $fonts;
+    font-weight: 300;
+    font-size: .8rem;
+  }
+  .icons {
+    display: inline;
+    margin-left: auto;
+    a {
+      margin: .5rem;
+      i {
+        color: $white;
+      }
+    }
+  }
+}

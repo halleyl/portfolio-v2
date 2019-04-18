@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+header {
+  width: 100%;
+  background-image: url("../images/splash-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; }
+  header a {
+    color: #333333;
+    text-decoration: none; }
+    header a h1 img {
+      display: inline-block;
+      width: 50%;
+      margin: 25%; }
+    header a h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-size: 1.25rem;
+      margin: -47% auto 0;
+      padding-bottom: 40%;
+      color: #333333; }
+
+nav #menu {
+  z-index: 2;
+  width: 50px;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem; }
+nav ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #690A52;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4rem 0; }
+  nav ul li {
+    list-style: none; }
+    nav ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 1rem 2rem; }
+      nav ul li a img {
+        width: 30px; }
+      nav ul li a p {
+        font-family: "Roboto", sans-serif;
+        color: #FFFFFF;
+        font-weight: 300;
+        padding: 1rem; }
+
+.blurb {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 2rem 2rem 0; }
+  .blurb p {
+    padding-bottom: 1rem;
+    color: #333333; }
+
+.links {
+  padding: 2rem; }
+  .links figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 3rem; }
+    .links figure img {
+      width: 75px; }
+    .links figure figcaption {
+      padding-left: 2rem; }
+      .links figure figcaption a {
+        color: #333333;
+        text-decoration: none; }
+        .links figure figcaption a h3 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          font-size: 1.5rem; }
+        .links figure figcaption a p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          color: #333333; }
+
+footer {
+  background-color: #690A52;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  footer p {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: .8rem; }
+  footer .icons {
+    display: inline;
+    margin-left: auto; }
+    footer .icons a {
+      margin: .5rem; }
+      footer .icons a i {
+        color: #FFFFFF; }
+
+/*# sourceMappingURL=index.css.map */
