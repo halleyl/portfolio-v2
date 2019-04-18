@@ -1,0 +1,35 @@
+.portfolio h2 {
+  padding: 1.5rem 1.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #333333;
+  font-size: 2rem; }
+  .portfolio h2 img {
+    width: 4rem;
+    padding: .5rem;
+    vertical-align: middle; }
+.portfolio article h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  background-color: #EEEEEE;
+  padding: 1rem 0 1rem 2rem; }
+.portfolio article figure {
+  padding: 1rem 2rem 1rem; }
+  .portfolio article figure:first-of-type {
+    padding-top: 2rem; }
+  .portfolio article figure:last-of-type {
+    padding-bottom: 2rem; }
+  .portfolio article figure img {
+    width: 100%;
+    border: 1px solid #999999; }
+  .portfolio article figure figcaption h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; }
+  .portfolio article figure figcaption p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem; }
+
+/*# sourceMappingURL=portfolio.css.map */

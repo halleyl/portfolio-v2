@@ -17,29 +17,14 @@ $fonts: 'Roboto', sans-serif;
 }
 
 header {
-  width: 100%;
-  background-image: url('../images/splash-mobile.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  a {
-    color: $dkgray;
-    text-decoration: none;
-    h1 {
+  background-color: $plum;
+  h1 {
+    a {
+      text-decoration: none;
       img {
-        display: inline-block;
-        width: 50%;
-        margin: 25%;
+        padding: .75rem;
+        width: 15rem;
       }
-    }
-    h2 {
-      font-family: $fonts;
-      font-weight: 100;
-      font-size: 1.25rem;
-      margin: -47% auto 0;
-      padding-bottom: 40%;
-      color: $dkgray;
     }
   }
 }
@@ -67,6 +52,7 @@ nav {
         flex-direction: row;
         align-items: center;
         padding: 1rem 2rem;
+        text-decoration: none;
         img {
           width: 30px;
         }
@@ -117,46 +103,6 @@ nav {
 }
 
 
-
-.blurb {
-  font-family: $fonts;
-  font-weight: 300;
-  padding: 2rem 2rem 0;
-  p {
-    padding-bottom: 1rem;
-    color: $dkgray;
-  }
-}
-
-.links {
-  padding: 2rem;
-  figure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 3rem;
-    img {
-      width: 75px;
-    }
-    figcaption {
-      padding-left: 2rem;
-      a {
-        color: $dkgray;
-        text-decoration: none;
-        h3 {
-          font-family: $fonts;
-          font-weight: 100;
-          font-size: 1.5rem;
-        }
-        p {
-          font-family: $fonts;
-          font-weight: 300;
-          color: $dkgray;
-        }
-      }
-    }
-  }
-}
 
 footer {
   background-color: $plum;

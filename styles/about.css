@@ -1,0 +1,22 @@
+.about h2 {
+  padding: 1.5rem 1.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #333333;
+  font-size: 2rem; }
+  .about h2 img {
+    width: 4rem;
+    padding: .5rem;
+    vertical-align: middle; }
+.about article {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+  .about article img {
+    width: 100%;
+    padding: .5rem 2rem; }
+  .about article p {
+    padding: 1rem 2rem; }
+    .about article p:last-of-type {
+      padding-bottom: 2rem; }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,87 @@
+// SCSS variables
+
+$white: #FFFFFF;
+$ltgray: #EEEEEE;
+$dkgray: #333333;
+$teal: #07B8B6;
+$plum: #690A52;
+
+$fonts: 'Roboto', sans-serif;
+
+.resume {
+  font-family: $fonts;
+  font-weight: 300;
+  color: $dkgray;
+  h2 {
+    padding: 1.5rem 1.5rem 1rem;
+    font-family: $fonts;
+    font-weight: 100;
+    color: $dkgray;
+    font-size: 2rem;
+    img {
+      width: 4rem;
+      padding: .5rem;
+      vertical-align: middle;
+    }
+  }
+  .heading {
+    padding: 1rem 2rem;
+    font-family: $fonts;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $dkgray;
+    p {
+      &:first-of-type {
+        font-weight: 500;
+      }
+      a {
+        text-decoration: none;
+        color: $dkgray;
+      }
+    }
+  }
+  .block {
+    padding: 0;
+    font-family: $fonts;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $dkgray;
+    h3 {
+      font-family: $fonts;
+      font-weight: 300;
+      font-size: 1.25rem;
+      background-color: $ltgray;
+      padding: 1rem 0 1rem 2rem;
+    }
+    ul {
+      list-style: url('../images/bullet.svg');
+      padding: 2rem 2rem 2rem 3rem;
+      li {
+        padding-bottom: 1rem;
+      }
+    }
+    p {
+      font-family: $fonts;
+      font-weight: 300;
+      font-size: 1rem;
+      padding: 0 2rem;
+      &:first-of-type {
+        padding-top: 1.5rem;
+        font-weight: 500;
+      }
+      a {
+        text-decoration: none;
+        color: $dkgray;
+      }
+    }
+  }
+  .education {
+    p:nth-of-type(3) {
+      padding-top: 1.5rem;
+      font-weight: 500;
+    }
+    p:last-of-type {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
