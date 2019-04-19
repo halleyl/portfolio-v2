@@ -15,6 +15,9 @@ $fonts: 'Roboto', sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
+.container {
+  padding-bottom: 100px;
+}
 
 header {
   width: 100%;
@@ -46,19 +49,19 @@ header {
 
 nav {
   #hamburger {
-    z-index: 2;
+    z-index: 3;
     width: 50px;
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
   }
   ul {
     display: none;
     background-color: $plum;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     right: 0;
-    padding: 4rem 0 2rem;
+    padding: 1rem 0 5rem;
     list-style: none;
     margin: 0;
     li {      
@@ -67,6 +70,7 @@ nav {
         flex-direction: row;
         align-items: center;
         padding: 1rem 2rem;
+        text-decoration: none;
         img {
           width: 30px;
         }
@@ -82,40 +86,39 @@ nav {
 }
 
 .hidden {
-  display: block;
-  top: -100%;
+  display: hidden;
+  bottom: -100%;
 }
 
 .hide {
-  display: block;
-  top: -100%;
-  animation: away .5s ease;
+  display: hidden;
+  bottom: -100%;
+  animation: away .5s cubic-bezier(.17,1,.86,.97);
 }
 
 .shown {
   display: block;
-  top: 0%;
-  animation: slide .75s ease-out;
+  bottom: 0;
+  animation: slide .4s cubic-bezier(.17,1,.86,.97);
 }
 
 @keyframes slide {
   0% {
-    top: -100%;
+    bottom: -100%;
   }
   100% {
-    top: 0;
+    bottom: 0;
   }
 }
 
 @keyframes away {
   0% {
-    top: 0;
+    bottom: 0;
   }
   100% {
-    top: -100%;
+    bottom: -100%;
   }
 }
-
 
 
 .blurb {
@@ -159,17 +162,13 @@ nav {
 }
 
 footer {
+  z-index: 2;
   background-color: $plum;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  p {
-    color: $white;
-    font-family: $fonts;
-    font-weight: 300;
-    font-size: .8rem;
-  }
+  padding: 1.5rem 2rem 1rem;
+  margin-right: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   .icons {
     display: inline;
     margin-left: auto;
@@ -178,6 +177,13 @@ footer {
       i {
         color: $white;
       }
+    }
+    p {
+      color: $white;
+      font-family: $fonts;
+      font-weight: 300;
+      font-size: .8rem;
+      padding: .5rem;
     }
   }
 }

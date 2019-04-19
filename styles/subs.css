@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.container {
+  padding-bottom: 100px; }
+
 header {
   background-color: #690A52; }
   header h1 a {
@@ -13,18 +16,18 @@ header {
       width: 15rem; }
 
 nav #hamburger {
-  z-index: 2;
+  z-index: 3;
   width: 50px;
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem; }
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem; }
 nav ul {
   display: none;
   background-color: #690A52;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   right: 0;
-  padding: 4rem 0 2rem;
+  padding: 1rem 0 5rem;
   list-style: none;
   margin: 0; }
   nav ul li a {
@@ -49,59 +52,50 @@ nav ul {
       padding: 1rem; }
 
 .hidden {
-  display: block;
-  top: -100%; }
+  display: hidden;
+  bottom: -100%; }
 
 .hide {
-  display: block;
-  top: -100%;
-  -webkit-animation: away .5s ease;
-          animation: away .5s ease; }
+  display: hidden;
+  bottom: -100%;
+  -webkit-animation: away 0.5s cubic-bezier(0.17, 1, 0.86, 0.97);
+          animation: away 0.5s cubic-bezier(0.17, 1, 0.86, 0.97); }
 
 .shown {
   display: block;
-  top: 0%;
-  -webkit-animation: slide .75s ease-out;
-          animation: slide .75s ease-out; }
+  bottom: 0;
+  -webkit-animation: slide 0.4s cubic-bezier(0.17, 1, 0.86, 0.97);
+          animation: slide 0.4s cubic-bezier(0.17, 1, 0.86, 0.97); }
 
 @-webkit-keyframes slide {
   0% {
-    top: -100%; }
+    bottom: -100%; }
   100% {
-    top: 0; } }
+    bottom: 0; } }
 
 @keyframes slide {
   0% {
-    top: -100%; }
+    bottom: -100%; }
   100% {
-    top: 0; } }
+    bottom: 0; } }
 @-webkit-keyframes away {
   0% {
-    top: 0; }
+    bottom: 0; }
   100% {
-    top: -100%; } }
+    bottom: -100%; } }
 @keyframes away {
   0% {
-    top: 0; }
+    bottom: 0; }
   100% {
-    top: -100%; } }
+    bottom: -100%; } }
 footer {
+  z-index: 2;
   background-color: #690A52;
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
-  footer p {
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: .8rem; }
+  padding: 1.5rem 2rem 1rem;
+  margin-right: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
   footer .icons {
     display: inline;
     margin-left: auto; }
@@ -109,5 +103,11 @@ footer {
       margin: .5rem; }
       footer .icons a i {
         color: #FFFFFF; }
+    footer .icons p {
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: .8rem;
+      padding: .5rem; }
 
 /*# sourceMappingURL=subs.css.map */
