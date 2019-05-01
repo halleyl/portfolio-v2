@@ -19,21 +19,25 @@ header {
     text-decoration: none; }
     header a h1 img {
       display: inline-block;
-      width: 50%;
-      margin: 25%; }
-    header a h2 {
-      font-family: "Roboto", sans-serif;
-      font-weight: 100;
-      font-size: 1.25rem;
-      margin: -47% auto 0;
-      padding-bottom: 40%;
-      color: #333333; }
+      width: 60%;
+      margin: 25vh 20%; }
 
+@media (min-width: 1000px) {
+  header {
+    background-image: url("../images/splash-desktop.jpg");
+    height: 100vh; }
+    header a h1 img {
+      width: 40%;
+      margin: 25vh 30%; } }
+@media (min-width: 1280px) {
+  header {
+    background-image: url("../images/splash-hd.jpg");
+    height: 100vh; } }
 nav #hamburger {
   z-index: 3;
   width: 50px;
   position: fixed;
-  bottom: 2rem;
+  bottom: 2.5rem;
   right: 2rem; }
 nav ul {
   display: none;
@@ -44,6 +48,10 @@ nav ul {
   padding: 1rem 0 5rem;
   list-style: none;
   margin: 0; }
+  nav ul li:hover a svg .st0 {
+    fill: #07b8b6;
+    -webkit-animation: fadein .25s linear;
+            animation: fadein .25s linear; }
   nav ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,6 +65,14 @@ nav ul {
             align-items: center;
     padding: 1rem 2rem;
     text-decoration: none; }
+    nav ul li a svg {
+      width: 30px; }
+      nav ul li a svg .st0 {
+        fill: #ffffff; }
+      nav ul li a svg .st1 {
+        fill: #690A52; }
+      nav ul li a svg .st2 {
+        fill: #eeeeee; }
     nav ul li a img {
       width: 30px; }
     nav ul li a p {
@@ -102,14 +118,74 @@ nav ul {
     bottom: 0; }
   100% {
     bottom: -100%; } }
+@-webkit-keyframes fadein {
+  0% {
+    fill: #ffffff; }
+  100% {
+    fill: #07b8b6; } }
+@keyframes fadein {
+  0% {
+    fill: #ffffff; }
+  100% {
+    fill: #07b8b6; } }
+@media (min-width: 750px) {
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #690A52; }
+    nav #hamburger {
+      display: none; }
+    nav ul {
+      float: right;
+      display: block;
+      background-color: inherit;
+      position: relative;
+      padding: 0;
+      list-style: none;
+      margin: 0; }
+      nav ul li {
+        float: left; }
+        nav ul li a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: .8rem 1rem .6rem;
+          text-decoration: none; }
+          nav ul li a img {
+            width: 30px; }
+          nav ul li a p {
+            font-family: "Roboto", sans-serif;
+            color: #FFFFFF;
+            font-weight: 300;
+            padding: 1rem; } }
 .blurb {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding: 2rem 2rem 0; }
+  .blurb .lauren {
+    display: none; }
   .blurb p {
     padding-bottom: 1rem;
     color: #333333; }
 
+@media (min-width: 800px) {
+  .blurb {
+    float: left;
+    width: 50%;
+    max-width: 450px; }
+    .blurb .lauren {
+      display: block;
+      width: 95%;
+      max-width: 450px;
+      padding: 0 1rem 1rem 0; } }
 .links {
   padding: 2rem; }
   .links figure {
@@ -161,5 +237,13 @@ footer {
       font-weight: 300;
       font-size: .8rem;
       padding: .5rem; }
+
+@media (min-width: 750px) {
+  footer {
+    position: relative;
+    bottom: 0; }
+
+  .container {
+    padding-bottom: 0; } }
 
 /*# sourceMappingURL=index.css.map */

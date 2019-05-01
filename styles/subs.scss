@@ -23,10 +23,11 @@ $fonts: 'Roboto', sans-serif;
 header {
   background-color: $plum;
   h1 {
+    display: inline-block;
     a {
       text-decoration: none;
       img {
-        padding: .75rem;
+        padding: .75rem .75rem .15rem;
         width: 15rem;
       }
     }
@@ -38,7 +39,7 @@ nav {
     z-index: 3;
     width: 50px;
     position: fixed;
-    bottom: 2rem;
+    bottom: 2.5rem;
     right: 2rem;
   }
   ul {
@@ -50,15 +51,24 @@ nav {
     padding: 1rem 0 5rem;
     list-style: none;
     margin: 0;
-    li {      
+    li {   
+      &:hover {
+        a svg .st0 {
+          fill:#07b8b6;
+          animation: fadein .25s linear;
+        }
+      }
       a {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 1rem 2rem;
         text-decoration: none;
-        img {
+        svg {
           width: 30px;
+          .st0{fill:#ffffff;}
+          .st1{fill:#690A52;}
+          .st2{fill:#eeeeee;}
         }
         p {
           font-family: $fonts;
@@ -68,6 +78,15 @@ nav {
         }
       }
     }
+  }
+}
+
+@keyframes fadein {
+  0% {
+    fill:#ffffff;
+  }
+  100% {
+    fill:#07b8b6;
   }
 }
 
@@ -106,6 +125,27 @@ nav {
   }
 }
 
+.breadcrumbs {
+  display: flex;
+  padding: .25rem;
+  font-family: $fonts;
+  font-weight: 300;
+  font-size: .8rem;
+  li {
+    display: block;
+    background: $ltgray url('../images/breadslice.svg') no-repeat right;
+    padding: .2rem 1.3rem .2rem .3rem;
+    &:last-of-type {
+      background: $ltgray url('../images/breadend.svg') no-repeat right;
+    }
+    a {
+      display: block;
+      color: $dkgray;
+      text-decoration: none;
+    }
+  }
+}
+
 footer {
   z-index: 2;
   background-color: $plum;
@@ -130,5 +170,51 @@ footer {
       font-size: .8rem;
       padding: .5rem;
     }
+  }
+}
+
+@media(min-width: 750px) {
+  nav {
+    float: right;
+    #hamburger {
+      display: none;
+    }
+    ul {
+      display: block;
+      background-color: inherit;
+      position: relative;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      li {
+        float: left;
+        a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: .8rem 1rem .6rem;
+          text-decoration: none;
+          img {
+            width: 30px;
+          }
+          p {
+            font-family: $fonts;
+            color: $white;
+            font-weight: 300;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 750px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+  .container {
+    padding-bottom: 0;
   }
 }

@@ -10,7 +10,7 @@ $fonts: 'Roboto', sans-serif;
 
 .about {
   h2 {
-    padding: 1.5rem 1.5rem 1rem;
+    padding: 1rem 1.5rem 1rem;
     font-family: $fonts;
     font-weight: 100;
     color: $dkgray;
@@ -26,6 +26,7 @@ $fonts: 'Roboto', sans-serif;
     font-weight: 300;
     img {
       width: 100%;
+      max-width: 600px;
       padding: .5rem 2rem;
     }
     p {
@@ -34,5 +35,19 @@ $fonts: 'Roboto', sans-serif;
         padding-bottom: 2rem;
       }
     }
+  }
+}
+
+@media(min-width: 640px) {
+  .about article img {
+    max-width: 60%;
+    float: right;
+  }
+}
+
+@media(min-width: 800px) {
+  .about article img {
+    max-width: 50%;
+    float: right;
   }
 }

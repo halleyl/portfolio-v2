@@ -2,6 +2,7 @@
 
 $white: #FFFFFF;
 $ltgray: #EEEEEE;
+$mdgray: #999999;
 $dkgray: #333333;
 $teal: #07B8B6;
 $plum: #690A52;
@@ -9,8 +10,9 @@ $plum: #690A52;
 $fonts: 'Roboto', sans-serif;
 
 .portfolio {
+  padding-bottom: 25px;
   h2 {
-    padding: 1.5rem 1.5rem 1rem;
+    padding: 1rem 1.5rem 1rem;
     font-family: $fonts;
     font-weight: 100;
     color: $dkgray;
@@ -27,32 +29,137 @@ $fonts: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 1.25rem;
       background-color: $ltgray;
-      padding: 1rem 0 1rem 2rem;
+      padding: 1rem 0 1rem 1.5rem;
     }
+    .wrapper {
+      figure {
+        margin: 0 auto;
+        display: block;
+        padding: .5rem 1rem .5rem;
+        text-align: center;
+        a img {
+          width: 100%;
+          max-width: 500px;
+          border: 1px solid #999999;
+        }
+        figcaption {
+          text-align: left;
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 500px;
+          h4 {
+            font-family: $fonts;
+            font-weight: 500;
+            font-size: 1rem;
+            a {
+              color: $plum;
+              text-decoration: none;
+            }
+          }
+          p {
+            font-family: $fonts;
+            font-weight: 300;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 800px) {
+.portfolio {
+    padding-bottom: 2rem;
+  }
+  article {
+    margin: 0 2rem;
+    h3 {
+      padding: 1rem 0 1rem 1rem;
+    }
+    .wrapper {
+      margin-left: 230px;
+      padding: 0 0 0 40px;
+      background-color: $ltgray;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      figure {
+        flex-basis: 50%;
+        margin: 0;
+        padding: .5rem 0rem 1rem;
+        display: block;
+        a {
+          img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 1.5rem auto 0;
+          }
+        }
+        figcaption {
+          padding-top: .25rem;
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .development h3 {
+    position: absolute;
+    top: 210px;
+    width: 250px;
+  }
+  .marketing h3 {
+    position: absolute;
+    top: 270px;
+    width: 250px;
+  }
+  .copywriting h3 {
+    position: absolute;
+    top: 330px;
+    width: 250px;
+  }
+  article.under {
+    h3 {
+      background-color: $mdgray;
+      color: $white;
+      width: 230px;
+      &:hover {
+        background-color: $teal;
+      }
+    }
+    .wrapper figure {
+      display: none;
+    }
+  }
+  article.over {
+    h3 {
+      color: $white;
+      background-color: $plum;
+      animation: stretch .25s linear;
+    }
+    .wrapper figure {
+      display: block;
+    }  
+  }
+}
+
+@media(min-width: 1000px) {
+  .portfolio article .wrapper {
+    padding: 0 1rem 0 40px;
     figure {
-      padding: 1rem 2rem 1rem;
-      &:first-of-type {
-        padding-top: 2rem;
-      }
-      &:last-of-type {
-        padding-bottom: 2rem;
-      }
-      img {
-        width: 100%;
-        border: 1px solid #999999;
-      }
-      figcaption {
-        h4 {
-          font-family: $fonts;
-          font-weight: 500;
-          font-size: 1rem;
-        }
-        p {
-          font-family: $fonts;
-          font-weight: 300;
-          font-size: 1rem;
-        }
-      }
+      padding: .5rem 1rem 1rem 1rem;
     }
+  }
+}
+
+@keyframes stretch {
+  0% {
+    width: 230px;
+  }
+  100% {
+    width: 250px;
   }
 }

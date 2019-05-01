@@ -13,7 +13,7 @@ $fonts: 'Roboto', sans-serif;
   font-weight: 300;
   color: $dkgray;
   h2 {
-    padding: 1.5rem 1.5rem 1rem;
+    padding: 1rem 1.5rem 1rem;
     font-family: $fonts;
     font-weight: 100;
     color: $dkgray;
@@ -44,10 +44,10 @@ $fonts: 'Roboto', sans-serif;
       }
     }
     .docs {
-      padding-left: 1rem;
+      padding-left: 1.25rem;
       a {
         text-align: center;
-        padding: 0 .5rem;
+        padding: 0 .25rem;
         display: inline-block;
         font-size: .75rem;
         color: $dkgray;

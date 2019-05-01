@@ -1,35 +1,131 @@
-.portfolio h2 {
-  padding: 1.5rem 1.5rem 1rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  color: #333333;
-  font-size: 2rem; }
-  .portfolio h2 img {
-    width: 4rem;
-    padding: .5rem;
-    vertical-align: middle; }
-.portfolio article h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  background-color: #EEEEEE;
-  padding: 1rem 0 1rem 2rem; }
-.portfolio article figure {
-  padding: 1rem 2rem 1rem; }
-  .portfolio article figure:first-of-type {
-    padding-top: 2rem; }
-  .portfolio article figure:last-of-type {
-    padding-bottom: 2rem; }
-  .portfolio article figure img {
-    width: 100%;
-    border: 1px solid #999999; }
-  .portfolio article figure figcaption h4 {
+.portfolio {
+  padding-bottom: 25px; }
+  .portfolio h2 {
+    padding: 1rem 1.5rem 1rem;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1rem; }
-  .portfolio article figure figcaption p {
+    font-weight: 100;
+    color: #333333;
+    font-size: 2rem; }
+    .portfolio h2 img {
+      width: 4rem;
+      padding: .5rem;
+      vertical-align: middle; }
+  .portfolio article h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 1rem; }
+    font-size: 1.25rem;
+    background-color: #EEEEEE;
+    padding: 1rem 0 1rem 1.5rem; }
+  .portfolio article .wrapper figure {
+    margin: 0 auto;
+    display: block;
+    padding: .5rem 1rem .5rem;
+    text-align: center; }
+    .portfolio article .wrapper figure a img {
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid #999999; }
+    .portfolio article .wrapper figure figcaption {
+      text-align: left;
+      display: inline-block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 500px; }
+      .portfolio article .wrapper figure figcaption h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1rem; }
+        .portfolio article .wrapper figure figcaption h4 a {
+          color: #690A52;
+          text-decoration: none; }
+      .portfolio article .wrapper figure figcaption p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 1rem; }
+
+@media (min-width: 800px) {
+  .portfolio {
+    padding-bottom: 2rem; }
+
+  article {
+    margin: 0 2rem; }
+    article h3 {
+      padding: 1rem 0 1rem 1rem; }
+    article .wrapper {
+      margin-left: 230px;
+      padding: 0 0 0 40px;
+      background-color: #EEEEEE;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      article .wrapper figure {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin: 0;
+        padding: .5rem 0rem 1rem;
+        display: block; }
+        article .wrapper figure a img {
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          margin: 1.5rem auto 0; }
+        article .wrapper figure figcaption {
+          padding-top: .25rem;
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto; }
+
+  .development h3 {
+    position: absolute;
+    top: 210px;
+    width: 250px; }
+
+  .marketing h3 {
+    position: absolute;
+    top: 270px;
+    width: 250px; }
+
+  .copywriting h3 {
+    position: absolute;
+    top: 330px;
+    width: 250px; }
+
+  article.under h3 {
+    background-color: #999999;
+    color: #FFFFFF;
+    width: 230px; }
+    article.under h3:hover {
+      background-color: #07B8B6; }
+  article.under .wrapper figure {
+    display: none; }
+
+  article.over h3 {
+    color: #FFFFFF;
+    background-color: #690A52;
+    -webkit-animation: stretch .25s linear;
+            animation: stretch .25s linear; }
+  article.over .wrapper figure {
+    display: block; } }
+@media (min-width: 1000px) {
+  .portfolio article .wrapper {
+    padding: 0 1rem 0 40px; }
+    .portfolio article .wrapper figure {
+      padding: .5rem 1rem 1rem 1rem; } }
+@-webkit-keyframes stretch {
+  0% {
+    width: 230px; }
+  100% {
+    width: 250px; } }
+@keyframes stretch {
+  0% {
+    width: 230px; }
+  100% {
+    width: 250px; } }
 
 /*# sourceMappingURL=portfolio.css.map */

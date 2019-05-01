@@ -1,5 +1,5 @@
 .about h2 {
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1rem 1.5rem 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: #333333;
@@ -13,10 +13,20 @@
   font-weight: 300; }
   .about article img {
     width: 100%;
+    max-width: 600px;
     padding: .5rem 2rem; }
   .about article p {
     padding: 1rem 2rem; }
     .about article p:last-of-type {
       padding-bottom: 2rem; }
+
+@media (min-width: 640px) {
+  .about article img {
+    max-width: 60%;
+    float: right; } }
+@media (min-width: 800px) {
+  .about article img {
+    max-width: 50%;
+    float: right; } }
 
 /*# sourceMappingURL=about.css.map */

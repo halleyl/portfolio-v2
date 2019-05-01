@@ -1,0 +1,47 @@
+.development {
+  padding-bottom: 1rem; }
+  .development h2 {
+    padding: 1.5rem 2rem .5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #333333;
+    font-size: 1.5rem; }
+  .development .hero {
+    width: 100%;
+    padding: .5rem 2rem; }
+    .development .hero img {
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid #999999; }
+  .development p {
+    padding: .5rem 2rem .5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #333333;
+    font-size: 1rem;
+    max-width: 45rem; }
+    .development p:last-of-type {
+      font-weight: 500; }
+  .development ul {
+    list-style: url("../images/bullet.svg");
+    padding: 0 2rem 2rem 3rem; }
+    .development ul li {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300; }
+  .development .extras {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0 2rem; }
+    .development .extras img {
+      width: 100%;
+      max-width: 500px;
+      margin: .5rem 0;
+      border: 1px solid #999999; }
+
+/*# sourceMappingURL=dev.css.map */

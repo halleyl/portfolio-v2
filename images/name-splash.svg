@@ -6,8 +6,14 @@
 	.st0{fill:#691953;}
 	.st1{font-family:'RainbowBridgePersonalUse';}
 	.st2{font-size:108px;}
-	.st3{letter-spacing:8;}
+	.st3{letter-spacing:7;}
 	.st4{font-size:57px;}
+	.st5{font-family:'Roboto-Thin';}
+	.st6{font-size:36px;}
 </style>
-<text transform="matrix(1 0 0 1 -2.288818e-04 91.7989)"><tspan x="0" y="0" class="st0 st1 st2">Lauren</tspan><tspan x="0" y="176.6" class="st0 st1 st2 st3">					</tspan><tspan x="180" y="176.6" class="st0 st1 st4"> </tspan><tspan x="194.7" y="176.6" class="st0 st1 st2">Halley</tspan></text>
+<text transform="matrix(1 0 0 1 -2.288818e-04 91.7989)" class="st0 st1 st2">Lauren</text>
+<text transform="matrix(1 0 0 1 -2.288818e-04 268.3989)" class="st0 st1 st2 st3">     </text>
+<text transform="matrix(1 0 0 1 179.9998 268.3989)" class="st0 st1 st4"> </text>
+<text transform="matrix(1 0 0 1 194.6998 268.3989)" class="st0 st1 st2">Halley</text>
+<text transform="matrix(1 0 0 1 13 153.8503)" class="st5 st6">Digital Marketing &amp; Design</text>
 </svg>
