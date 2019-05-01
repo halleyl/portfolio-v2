@@ -70,6 +70,7 @@ $fonts: 'Roboto', sans-serif;
 
 @media(max-width: 799px) {
   .portfolio article h3 {
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
   }
