@@ -31,7 +31,8 @@ nav ul {
   right: 0;
   padding: 1rem 0 5rem;
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  z-index: 2; }
   nav ul li:hover a svg .st0 {
     fill: #07b8b6;
     -webkit-animation: fadein .25s linear;
