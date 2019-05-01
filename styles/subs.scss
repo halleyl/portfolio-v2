@@ -159,6 +159,12 @@ footer {
     margin-left: auto;
     a {
       margin: .5rem;
+      &:hover {
+        i {
+          color: $teal;
+          animation: icons .25s linear;
+        }
+      }
       i {
         color: $white;
       }
@@ -172,6 +178,16 @@ footer {
     }
   }
 }
+
+@keyframes icons {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #07b8b6;
+  }
+}
+
 
 @media(min-width: 750px) {
   nav {

@@ -229,6 +229,10 @@ footer {
     margin-left: auto; }
     footer .icons a {
       margin: .5rem; }
+      footer .icons a:hover i {
+        color: #07B8B6;
+        -webkit-animation: icons .25s linear;
+                animation: icons .25s linear; }
       footer .icons a i {
         color: #FFFFFF; }
     footer .icons p {
@@ -238,6 +242,17 @@ footer {
       font-size: .8rem;
       padding: .5rem; }
 
+@-webkit-keyframes icons {
+  0% {
+    color: #ffffff; }
+  100% {
+    color: #07b8b6; } }
+
+@keyframes icons {
+  0% {
+    color: #ffffff; }
+  100% {
+    color: #07b8b6; } }
 @media (min-width: 750px) {
   footer {
     position: relative;
