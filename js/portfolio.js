@@ -7,16 +7,19 @@ var nav3 = document.querySelector('article.copywriting h3')
 
 var currentTab
 
+
 // Check to see if a tab has already been clicked
 
-if (sessionStorage.getItem('tab') === 'development') {
-  swap1()
-} else if (sessionStorage.getItem('tab') === 'marketing') {
-  swap2()
-} else if (sessionStorage.getItem('tab') === 'copywriting') {
-  swap3()
-} else {
-  sessionStorage.setItem('tab', 'development')
+if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
+  if (sessionStorage.getItem('tab') === 'development') {
+    swap1()
+  } else if (sessionStorage.getItem('tab') === 'marketing') {
+    swap2()
+  } else if (sessionStorage.getItem('tab') === 'copywriting') {
+    swap3()
+  } else {
+    sessionStorage.setItem('tab', 'development')
+  }
 }
 
 nav1.addEventListener('click', swap1)
