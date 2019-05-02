@@ -67,7 +67,7 @@ nav {
     z-index: 3;
     width: 50px;
     position: fixed;
-    bottom: 2rem;
+    bottom: .9rem;
     right: 2rem;
   }
   ul {
@@ -277,13 +277,6 @@ footer {
       i {
         color: $white;
       }
-    }
-    p {
-      color: $white;
-      font-family: $fonts;
-      font-weight: 300;
-      font-size: .8rem;
-      padding: .5rem .5rem 0;
     }
   }
 }

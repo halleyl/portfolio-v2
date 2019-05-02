@@ -37,7 +37,7 @@ nav #hamburger {
   z-index: 3;
   width: 50px;
   position: fixed;
-  bottom: 2rem;
+  bottom: .9rem;
   right: 2rem; }
 nav ul {
   display: none;
@@ -235,12 +235,6 @@ footer {
                 animation: icons .25s linear; }
       footer .icons a i {
         color: #FFFFFF; }
-    footer .icons p {
-      color: #FFFFFF;
-      font-family: "Roboto", sans-serif;
-      font-weight: 300;
-      font-size: .8rem;
-      padding: .5rem .5rem 0; }
 
 @-webkit-keyframes icons {
   0% {

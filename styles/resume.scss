@@ -83,6 +83,7 @@ $fonts: 'Roboto', sans-serif;
       padding: 2rem 2rem 2rem 3rem;
       li {
         padding-bottom: 1rem;
+        padding-left: .5rem;
       }
     }
     p {
@@ -108,5 +109,15 @@ $fonts: 'Roboto', sans-serif;
     p:last-of-type {
       padding-bottom: 1.5rem;
     }
+  }
+}
+
+@media(max-width: 799px) {
+  .resume .block h3 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: $plum;
+    color: $white;
   }
 }

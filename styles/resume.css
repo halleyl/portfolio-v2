@@ -64,7 +64,8 @@
       list-style: url("../images/bullet.svg");
       padding: 2rem 2rem 2rem 3rem; }
       .resume .block ul li {
-        padding-bottom: 1rem; }
+        padding-bottom: 1rem;
+        padding-left: .5rem; }
     .resume .block p {
       font-family: "Roboto", sans-serif;
       font-weight: 300;
@@ -81,5 +82,14 @@
     font-weight: 500; }
   .resume .education p:last-of-type {
     padding-bottom: 1.5rem; }
+
+@media (max-width: 799px) {
+  .resume .block h3 {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #690A52;
+    color: #FFFFFF; } }
 
 /*# sourceMappingURL=resume.css.map */

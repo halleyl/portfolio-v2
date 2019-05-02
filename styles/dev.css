@@ -27,7 +27,8 @@
     padding: 0 2rem 2rem 3rem; }
     .development ul li {
       font-family: "Roboto", sans-serif;
-      font-weight: 300; }
+      font-weight: 300;
+      padding-left: .5rem; }
   .development .extras {
     display: -webkit-box;
     display: -ms-flexbox;
