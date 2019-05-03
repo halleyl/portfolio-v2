@@ -37,6 +37,12 @@ $fonts: 'Roboto', sans-serif;
       &:last-of-type {
         font-weight: 500;
       }
+      a {
+        color: $plum;
+        &:hover {
+          color: $teal;
+        }
+      }
     }
     ul {
       list-style: url('../images/bullet.svg');
@@ -71,11 +77,11 @@ $fonts: 'Roboto', sans-serif;
       flex-basis: 100%;
     }
     .hero {
-      flex-basis: 50%;
+      flex-basis: 45%;
       max-width: 540px;
     }
     .text {
-      flex-basis: 50%;
+      flex-basis: 55%;
     }
     .extras {
       flex-basis: 100%;
@@ -91,4 +97,13 @@ $fonts: 'Roboto', sans-serif;
     }
     padding-bottom: 3rem;
   }
+}
+
+// Insert FA external link icon after external link
+a[target="_blank"]:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: .8rem;
+    color: $teal;
+    content: " \f35d";
 }

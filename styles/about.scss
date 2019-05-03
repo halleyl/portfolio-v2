@@ -32,22 +32,38 @@ $fonts: 'Roboto', sans-serif;
     p {
       padding: 1rem 2rem;
       &:last-of-type {
-        padding-bottom: 2rem;
+        padding-bottom: 3.45rem;
       }
     }
   }
 }
 
 @media(min-width: 640px) {
-  .about article img {
-    max-width: 60%;
-    float: right;
+  .about article {
+    img {
+      max-width: 60%;
+      float: right;
+    }
+    a {
+      color: $plum;
+      &:hover {
+        color: $teal;
+      }
+    }
   }
 }
 
 @media(min-width: 800px) {
   .about article img {
     max-width: 50%;
+    float: right;
+  }
+}
+
+@media(min-width: 1000px) {
+  .about article img {
+    max-width: 50%;
+    padding-left: 5%;
     float: right;
   }
 }

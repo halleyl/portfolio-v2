@@ -10,7 +10,6 @@ $plum: #690A52;
 $fonts: 'Roboto', sans-serif;
 
 .portfolio {
-  padding-bottom: 25px;
   h2 {
     padding: 1rem 1.5rem 1rem;
     font-family: $fonts;
@@ -36,19 +35,21 @@ $fonts: 'Roboto', sans-serif;
       figure {
         margin: 1rem;
         display: block;
-        background-color: $ltgray;
         padding: 0;
         text-align: center;
         a img {
           width: 100%;
           max-width: 500px;
           border: 1px solid #999999;
+          display: block;
+          margin: 0 auto;
         }
         figcaption {
+          background-color: $ltgray;
           text-align: left;
           display: inline-block;
           margin: 0 auto;
-          padding: .25rem .5rem .5rem;
+          padding: .5rem 1rem 1rem;
           width: 100%;
           max-width: 500px;
           h4 {
@@ -81,8 +82,7 @@ $fonts: 'Roboto', sans-serif;
 
 @media(min-width: 800px) {
 .portfolio {
-    padding-bottom: 2rem;
-  }
+  padding-bottom: 2rem;
   article {
     margin: 0 2rem;
     .wrapper {
@@ -101,15 +101,12 @@ $fonts: 'Roboto', sans-serif;
           img {
             display: block;
             width: 100%;
-            max-width: 400px;
+            max-width: 830px;
             margin: 0 auto;
           }
         }
         figcaption {
-          padding-top: .25rem;
-          width: 100%;
-          max-width: 400px;
-          margin: 0 auto;
+          padding: .5rem 0 .5rem 0;
         }
       }
     }
@@ -150,12 +147,13 @@ $fonts: 'Roboto', sans-serif;
       background-color: $plum;
       font-size: 1.15rem;
       padding: 1rem 0 1rem 1rem; 
-      animation: stretch .25s linear;
+      animation: stretch .3s linear;
     }
     .wrapper figure {
       display: block;
     }  
   }
+}
   .portfolio article .wrapper {
     padding: 0 1.5rem 0 30px;
     figure {
