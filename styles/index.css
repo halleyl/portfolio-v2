@@ -22,7 +22,7 @@ header {
       width: 70%;
       margin: 20vh 15%; }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   header {
     height: 100vh; }
     header a h1 img {
