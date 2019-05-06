@@ -32,10 +32,16 @@ $fonts: 'Roboto', sans-serif;
     color: $dkgray;
     display: flex;
     flex-direction: row;
+    .name {
+      display: none;
+    }
     .contact {
       p {
         &:first-of-type {
           font-weight: 500;
+        }
+        &:nth-of-type(2) {
+          display: none;
         }
         a {
           text-decoration: none;
@@ -84,6 +90,10 @@ $fonts: 'Roboto', sans-serif;
       li {
         padding-bottom: 1rem;
         padding-left: .5rem;
+        strong {
+          font-weight: 500;
+          font-variant: small-caps;
+        }
       }
     }
     p {
@@ -119,5 +129,34 @@ $fonts: 'Roboto', sans-serif;
     top: 0;
     background-color: $plum;
     color: $white;
+  }
+}
+
+@media(min-width:800px) {
+  .resume .skills ul {
+    column-count: 2;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    li {
+      display: inline-block;
+      width: 100%;
+      &::before {
+        content: '\25cf';
+        color: $teal;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media(min-width:1000px) {
+  .resume .skills ul {
+    column-count: 3;
+  }
+}
+
+@media(min-width:1200px) {
+  .resume .skills ul {
+    column-count: 4;
   }
 }

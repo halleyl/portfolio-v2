@@ -1,0 +1,115 @@
+.container {
+  padding-bottom: 0;
+}
+
+header {
+  display: none;
+}
+
+h2 {
+  display: none;
+}
+
+.breadcrumbs {
+  display: none;
+}
+
+.docs {
+  display: none;
+}
+
+.resume {
+  padding-bottom: 0;
+  .heading {
+    padding: .75rem 1.5rem;
+    font-size: .9rem;
+    .name {
+      display: block;
+      width: 75%;
+      img {
+        width: 18rem;
+      }
+    }
+    .contact {
+      p:first-of-type {
+        display: none;
+      }
+      p:nth-of-type(2) {
+        display: inline-block;
+        padding-top: .75rem;
+      }
+    }
+  }
+  .block {
+    color: black;
+    h3 {
+      color: black;
+      font-size: 1rem;
+      width: 0;
+      height: 0;
+      padding: 0;
+      border-style: solid;
+      border-width: .75rem 44rem 1.75rem 2rem;
+      border-color: #eeeeee;
+      position: relative;
+    }
+    p {
+      font-size: .9rem;
+      color: black;
+    }
+    p:first-of-type {
+      padding: 1rem 2rem 0;
+    }
+    p:last-of-type {
+      padding-bottom: 0;
+    }
+    ul {
+      padding: 1rem 2rem .75rem;
+      list-style: disc;
+      li {
+        font-size: .9rem;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-bottom: .5rem;
+        strong {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .experience {
+    p {
+      float: left;
+      padding-top: 1rem;
+      padding-bottom: -.5rem;
+    }
+    ul {
+      clear: both;
+      padding-top: .5rem;
+    }
+  }
+  .skills ul {
+    column-count: 3;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    li {
+      padding: 0;
+      margin-bottom: .5rem;
+      display: block;
+      color: black;
+    }
+  }
+  .education {
+    p:nth-of-type(3) {
+      padding-top: .5rem;
+      font-weight: 500;
+    }
+    p:last-of-type {
+      padding-bottom: .5rem;
+    }
+  }
+}
+
+footer {
+  display: none;
+}

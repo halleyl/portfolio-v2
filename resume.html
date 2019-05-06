@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/subs.css" type="text/css">
   <link rel="stylesheet" href="styles/resume.css" type="text/css">
+  <link rel="stylesheet" href="styles/print.css" type="text/css" media="print">
   <!-- End Stylesheets -->
 </head>
 <body>
@@ -54,24 +55,26 @@
         Resume
       </h2>
       <article class="heading">
+        <div class="name"><img src="images/name-black.svg" alt="Lauren Halley"></div>
         <div class="contact">
           <p>Lauren Halley</p>
+          <p><a href="https://laurenhalley.com/">laurenhalley.com</a></p>
           <p><a href="mailto:me@laurenhalley.com">me@laurenhalley.com</a></p>
           <p><a href="https://www.linkedin.com/in/lhalley/" target="_blank">linkedin.com/in/lhalley</a></p>
         </div>
         <div class="docs">
-          <a href=""><i class="fas fa-print fa-2x"></i>PRINT</a>
-          <a href=""><i class="fas fa-file-pdf fa-2x"></i>PDF</a>
+          <a onclick="window.print();return false;"><i class="fas fa-print fa-2x"></i>PRINT</a>
+          <a href="https://drive.google.com/file/d/1VR43_kUWagoEkfbrbMt_sy7kNIT-RkdP/view?usp=sharing" target="_blank"><i class="fas fa-file-pdf fa-2x"></i>PDF</a>
         </div>
       </article>
       <article class="block summary">
         <h3>SUMMARY</h3>
         <ul>
-          <li>Professional: Innovative, hard-working designer with a knack for digital marketing that forges lasting customer relationships.</li>
-          <li>Accomplished: Nine years of professional experience in marketing design and web development.</li>
-          <li>Versatile: Deep and varied skills including email marketing, copywriting and project management.</li>
-          <li>Conscientious: Proven record of productive and respectful communication.</li>
-          <li>Focused: Deadline-driven, independent worker with strong collaborative skills and leadership experience.</li>
+          <li><strong>professional</strong> - Innovative, hard-working designer with a knack for digital marketing that forges lasting customer relationships.</li>
+          <li><strong>accomplished</strong> - Nine years of professional experience in marketing design and web development.</li>
+          <li><strong>versatile</strong> - Deep and varied skills including email marketing, copywriting and project management.</li>
+          <li><strong>conscientious</strong> - Proven record of productive and respectful communication.</li>
+          <li><strong>focused</strong> - Deadline-driven, independent worker with strong collaborative skills and leadership experience.</li>
         </ul>
       </article>
 
@@ -83,20 +86,11 @@
         <p>General Manager</p>
         <ul>
           <li>Directed daily operations of an e-commerce business and created all email marketing, graphic design, website updates and product photography.</li>
-          <li>Managed large-scale technical projects including migration and complete redesign of company website.</li>
+          <li>Managed large-scale technical projects including replatforming and redesign of e-commerce website.</li>
           <li>Performed ongoing maintenance of company website. Produced HTML/CSS site content, added new products for sale, and authored promotional blog posts.</li>
           <li>Designed, coded and deployed email marketing campaigns and automations with MailChimp.</li>
           <li>Developed original design concepts for product packaging and brand signage.</li>
         </ul>
-      </article>
-
-      <article class="block education">
-        <h3>EDUCATION</h3>
-        <p>UW Professional &amp; Continuing Education</p>
-        <p>Certificate, HTML5, CSS3 &amp; Responsive Design for Web Development</p>
-        
-        <p>Boston College</p>
-        <p>Bachelor of Arts, Psychology</p>
       </article>
 
       <article class="block skills">
@@ -122,6 +116,14 @@
         </ul>
       </article>
 
+      <article class="block education">
+        <h3>EDUCATION</h3>
+        <p>UW Professional &amp; Continuing Education</p>
+        <p>Certificate, HTML5, CSS3 &amp; Responsive Design for Web Development</p>
+        
+        <p>Boston College</p>
+        <p>Bachelor of Arts, Psychology</p>
+      </article>
       
     </section>
     <footer>
