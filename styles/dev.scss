@@ -99,8 +99,63 @@ $fonts: 'Roboto', sans-serif;
   }
 }
 
+.lightbox-off {
+  display: none;
+}
+
+.lightbox-on {
+  display: none;
+}
+
+@media(min-width: 800px) {
+  .lightbox-on {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(51,51,51,.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-top: 1rem;
+      width: 830px;
+      max-width: 70%;
+    }
+    .fa-angle-double-left {
+      color: white;
+      padding: 1rem;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .fa-angle-double-right {
+      color: white;
+      padding: 1rem;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .fa-window-close {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 // Insert FA external link icon after external link
-a[target="_blank"]:after {
+.development a[target="_blank"]:after {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: .8rem;
