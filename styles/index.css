@@ -88,11 +88,9 @@ nav ul {
       padding: 1rem; }
 
 .hidden {
-  display: hidden;
   bottom: -100%; }
 
 .hide {
-  display: hidden;
   bottom: -100%;
   -webkit-animation: away 0.5s cubic-bezier(0.17, 1, 0.86, 0.97);
           animation: away 0.5s cubic-bezier(0.17, 1, 0.86, 0.97); }

@@ -92,12 +92,10 @@ nav {
 }
 
 .hidden {
-  display: hidden;
   bottom: -100%;
 }
 
 .hide {
-  display: hidden;
   bottom: -100%;
   animation: away .5s cubic-bezier(.17,1,.86,.97);
 }

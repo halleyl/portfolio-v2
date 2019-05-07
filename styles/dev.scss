@@ -44,25 +44,25 @@ $fonts: 'Roboto', sans-serif;
         }
       }
     }
-    button {
+    .view {
+      display: inline-block;
+      text-align: center;
+      width: 12rem;
+      padding: .75rem 1rem;
+      font-family: $fonts;
       font-size: 1.1rem;
       font-weight: 300;
+      color: black;
       background-color: $ltgray;
-      border: none;
-      width: 12rem;
-      margin: 0 1rem 1rem 0;
+      border: 0;
+      text-decoration: none;
       &:first-of-type {
         margin-left: 2rem;
+        margin-right: 1rem;
       }
-      a {
-        display: block;
-        padding: 1rem;
-        text-decoration: none;
-        color: $dkgray;
-        &:hover {
-          background-color: $teal;
-          animation: buttonup .25s linear;
-        }
+      &:hover {
+        background-color: $teal;
+        animation: buttonup .25s ease;
       }
     }
     ul {
