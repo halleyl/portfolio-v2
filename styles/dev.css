@@ -113,21 +113,29 @@
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-animation: lightfade .25s ease-out;
+            animation: lightfade .25s ease-out; }
     .lightbox-on img {
       margin-top: 1rem;
       width: 830px;
-      max-width: 70%; }
+      max-width: 70%;
+      -webkit-animation: imageup .25s ease-out;
+              animation: imageup .25s ease-out; }
     .lightbox-on .fa-angle-double-left {
       color: white;
       padding: 1rem;
-      opacity: .5; }
+      opacity: .5;
+      -webkit-animation: iconsin .5s linear;
+              animation: iconsin .5s linear; }
       .lightbox-on .fa-angle-double-left:hover {
         opacity: 1; }
     .lightbox-on .fa-angle-double-right {
       color: white;
       padding: 1rem;
-      opacity: .5; }
+      opacity: .5;
+      -webkit-animation: iconsin .5s linear;
+              animation: iconsin .5s linear; }
       .lightbox-on .fa-angle-double-right:hover {
         opacity: 1; }
     .lightbox-on .fa-window-close {
@@ -136,9 +144,41 @@
       top: 0;
       right: 0;
       padding: 1rem 2rem;
-      opacity: .5; }
+      opacity: .5;
+      -webkit-animation: iconsin .5s linear;
+              animation: iconsin .5s linear; }
       .lightbox-on .fa-window-close:hover {
         opacity: 1; } }
+@-webkit-keyframes lightfade {
+  0% {
+    background-color: rgba(51, 51, 51, 0); }
+  100% {
+    background-color: rgba(51, 51, 51, 0.95); } }
+@keyframes lightfade {
+  0% {
+    background-color: rgba(51, 51, 51, 0); }
+  100% {
+    background-color: rgba(51, 51, 51, 0.95); } }
+@-webkit-keyframes iconsin {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: .5; } }
+@keyframes iconsin {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: .5; } }
+@-webkit-keyframes imageup {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes imageup {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .development a[target="_blank"]:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;

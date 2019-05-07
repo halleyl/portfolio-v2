@@ -119,15 +119,18 @@ $fonts: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: lightfade .25s ease-out;
     img {
       margin-top: 1rem;
       width: 830px;
       max-width: 70%;
+      animation: imageup .25s ease-out;
     }
     .fa-angle-double-left {
       color: white;
       padding: 1rem;
       opacity: .5;
+      animation: iconsin .5s linear;
       &:hover {
         opacity: 1;
       }
@@ -136,6 +139,7 @@ $fonts: 'Roboto', sans-serif;
       color: white;
       padding: 1rem;
       opacity: .5;
+      animation: iconsin .5s linear;
       &:hover {
         opacity: 1;
       }
@@ -147,10 +151,38 @@ $fonts: 'Roboto', sans-serif;
       right: 0;
       padding: 1rem 2rem;
       opacity: .5;
+      animation: iconsin .5s linear;
       &:hover {
         opacity: 1;
       }
     }
+  }
+}
+
+@keyframes lightfade {
+  0% {
+    background-color: rgba(51,51,51,0);
+  }
+  100% {
+    background-color: rgba(51,51,51,.95);
+  }
+}
+
+@keyframes iconsin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+@keyframes imageup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
