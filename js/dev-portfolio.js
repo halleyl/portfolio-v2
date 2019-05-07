@@ -71,8 +71,20 @@ var next = document.querySelector('#next')
 
 // Add event listeners to arrows
 prev.addEventListener('click',goBack)
-
 next.addEventListener('click',goFwd)
+
+document.onkeydown = checkKey;
+function checkKey(e) {
+  e = e || window.event;
+  if (e.keyCode == '37') {
+    // left arrow
+    goBack()
+  }
+  else if (e.keyCode == '39') {
+    // right arrow
+    goFwd()
+  }
+}
 
 function goBack() {
   if(lightImg.getAttribute('src') == slides[0].imageSrc) {
