@@ -23,7 +23,8 @@ var tile4 = document.querySelector('#tile4')
 
 // Add vars to lightbox
 var lightbox = document.querySelector('#lightbox')
-var lightImg = document.querySelector('#zoom')
+var lightImg = document.querySelector('.zoom')
+var underImg = document.querySelector('#under')
 
 // When an image is clicked, toggle lightbox state to 'on'
 tile1.addEventListener("click", function() {
@@ -42,7 +43,12 @@ tile4.addEventListener("click", function() {
 
 // Load the image that was clicked
 function lightUp(tile) {
-  lightbox.classList.remove('lightbox-off')
+  if (lightbox.classList.contains('lightbox-off')) {
+    lightbox.classList.remove('lightbox-off')
+  }
+  if (lightbox.classList.contains('lightbox-deact')) {
+    lightbox.classList.remove('lightbox-deact')
+  }
   lightbox.classList.add('lightbox-on')
   if(tile == tile1) {
     lightImg.src = slides[0].imageSrc
@@ -70,36 +76,75 @@ next.addEventListener('click',goFwd)
 
 function goBack() {
   if(lightImg.getAttribute('src') == slides[0].imageSrc) {
-    lightImg.src = slides[3].imageSrc
-    lightImg.setAttribute('alt',slides[3].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[3].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[3].imageSrc
+      lightImg.setAttribute('alt',slides[3].altText)
+    }, 500)  
   } else if(lightImg.getAttribute('src') == slides[1].imageSrc) {
-    lightImg.src = slides[0].imageSrc
-    lightImg.setAttribute('alt',slides[0].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[0].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[0].imageSrc
+      lightImg.setAttribute('alt',slides[0].altText)
+    }, 500)
   } else if(lightImg.getAttribute('src') == slides[2].imageSrc) {
-    lightImg.src = slides[1].imageSrc
-    lightImg.setAttribute('alt',slides[1].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[1].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[1].imageSrc
+      lightImg.setAttribute('alt',slides[1].altText)
+    }, 500)
   } else if(lightImg.getAttribute('src') == slides[3].imageSrc) {
-    lightImg.src = slides[2].imageSrc
-    lightImg.setAttribute('alt',slides[2].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[2].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[2].imageSrc
+      lightImg.setAttribute('alt',slides[2].altText)
+    }, 500)
   }
 }
 
 function goFwd() {
   if(lightImg.getAttribute('src') == slides[0].imageSrc) {
-    lightImg.src = slides[1].imageSrc
-    lightImg.setAttribute('alt',slides[1].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[1].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[1].imageSrc
+      lightImg.setAttribute('alt',slides[1].altText)
+    }, 500)  
   } else if(lightImg.getAttribute('src') == slides[1].imageSrc) {
-    lightImg.src = slides[2].imageSrc
-    lightImg.setAttribute('alt',slides[2].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[2].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[2].imageSrc
+      lightImg.setAttribute('alt',slides[2].altText)
+    }, 500)
   } else if(lightImg.getAttribute('src') == slides[2].imageSrc) {
-    lightImg.src = slides[3].imageSrc
-    lightImg.setAttribute('alt',slides[3].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[3].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[3].imageSrc
+      lightImg.setAttribute('alt',slides[3].altText)
+    }, 500)
   } else if(lightImg.getAttribute('src') == slides[3].imageSrc) {
-    lightImg.src = slides[0].imageSrc
-    lightImg.setAttribute('alt',slides[0].altText)
+    underImg.setAttribute('style','background-image: url("' + slides[0].imageSrc + '");')
+    lightImg.classList.add('topout')
+    setTimeout(function() {
+      lightImg.classList.remove('topout')
+      lightImg.src = slides[0].imageSrc
+      lightImg.setAttribute('alt',slides[0].altText)
+    }, 500)
   }
 }
-
 // When the zoomed image is clicked, close it and toggle the class back to 'off'
 lightImg.addEventListener('click',closeIt)
 document.querySelector('#close').addEventListener('click',closeIt)
@@ -107,6 +152,10 @@ document.querySelector('#close').addEventListener('click',closeIt)
 function closeIt() {
   if (lightbox.classList.contains('lightbox-on')) {
     lightbox.classList.remove('lightbox-on')
-    lightbox.classList.add('lightbox-off')
+    lightbox.classList.add('lightbox-deact')
+    setTimeout(function() {
+      lightbox.classList.remove('lightbox-deact')
+      lightbox.classList.add('lightbox-off')
+    }, 250)
   }
 }

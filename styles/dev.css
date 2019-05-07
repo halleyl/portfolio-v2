@@ -26,6 +26,24 @@
       color: #690A52; }
       .development .text p a:hover {
         color: #07B8B6; }
+  .development .text button {
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: #EEEEEE;
+    border: none;
+    width: 12rem;
+    margin: 0 1rem 1rem 0; }
+    .development .text button:first-of-type {
+      margin-left: 2rem; }
+    .development .text button a {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #333333; }
+      .development .text button a:hover {
+        background-color: #07B8B6;
+        -webkit-animation: buttonup .25s linear;
+                animation: buttonup .25s linear; }
   .development .text ul {
     list-style: url("../images/bullet.svg");
     padding: 0 2rem 2rem 3rem; }
@@ -67,7 +85,8 @@
     .development .hero {
       -ms-flex-preferred-size: 45%;
           flex-basis: 45%;
-      max-width: 540px; }
+      max-width: 540px;
+      cursor: pointer; }
     .development .text {
       -ms-flex-preferred-size: 55%;
           flex-basis: 55%; }
@@ -89,7 +108,8 @@
       .development .extras img {
         width: 32%;
         max-width: 830px;
-        margin: 1rem 1rem 1rem 0; } }
+        margin: 1rem 1rem 1rem 0;
+        cursor: pointer; } }
 .lightbox-off {
   display: none; }
 
@@ -97,6 +117,60 @@
   display: none; }
 
 @media (min-width: 800px) {
+  .lightbox-deact {
+    -webkit-animation: lightout .25s linear;
+            animation: lightout .25s linear;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.95);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0; }
+    .lightbox-deact #under {
+      width: 70%;
+      max-width: 830px;
+      background-image: none;
+      background-size: cover;
+      display: block; }
+      .lightbox-deact #under .zoom {
+        top: 1rem;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        display: block; }
+    .lightbox-deact .fa-angle-double-left {
+      color: white;
+      padding: 1rem;
+      opacity: .5;
+      -webkit-animation: lightout .25s linear;
+              animation: lightout .25s linear; }
+    .lightbox-deact .fa-angle-double-right {
+      color: white;
+      padding: 1rem;
+      opacity: .5;
+      -webkit-animation: lightout .25s linear;
+              animation: lightout .25s linear; }
+    .lightbox-deact .fa-window-close {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      opacity: .5;
+      -webkit-animation: lightout .25s linear;
+              animation: lightout .25s linear; }
+
   .lightbox-on {
     z-index: 4;
     position: fixed;
@@ -116,15 +190,25 @@
             align-items: center;
     -webkit-animation: lightfade .25s ease-out;
             animation: lightfade .25s ease-out; }
-    .lightbox-on img {
-      margin-top: 1rem;
-      width: 830px;
-      max-width: 70%;
-      -webkit-animation: imageup .25s ease-out;
-              animation: imageup .25s ease-out; }
+    .lightbox-on #under {
+      width: 70%;
+      max-width: 830px;
+      background-image: none;
+      background-size: cover;
+      display: block; }
+      .lightbox-on #under .zoom {
+        top: 1rem;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        display: block; }
+      .lightbox-on #under .topout {
+        -webkit-animation: lightout .5s;
+                animation: lightout .5s;
+        opacity: 0; }
     .lightbox-on .fa-angle-double-left {
       color: white;
-      padding: 1rem;
+      padding: 25% 1rem;
       opacity: .5;
       -webkit-animation: iconsin .5s linear;
               animation: iconsin .5s linear; }
@@ -132,7 +216,7 @@
         opacity: 1; }
     .lightbox-on .fa-angle-double-right {
       color: white;
-      padding: 1rem;
+      padding: 25% 1rem;
       opacity: .5;
       -webkit-animation: iconsin .5s linear;
               animation: iconsin .5s linear; }
@@ -149,6 +233,16 @@
               animation: iconsin .5s linear; }
       .lightbox-on .fa-window-close:hover {
         opacity: 1; } }
+@-webkit-keyframes lightout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes lightout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 @-webkit-keyframes lightfade {
   0% {
     background-color: rgba(51, 51, 51, 0); }
@@ -179,7 +273,17 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-.development a[target="_blank"]:after {
+@-webkit-keyframes buttonup {
+  0% {
+    background-color: #EEEEEE; }
+  100% {
+    background-color: #07B8B6; } }
+@keyframes buttonup {
+  0% {
+    background-color: #EEEEEE; }
+  100% {
+    background-color: #07B8B6; } }
+.development p a[target="_blank"]:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: .8rem;
