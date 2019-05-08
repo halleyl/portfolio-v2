@@ -101,7 +101,7 @@ $fonts: 'Roboto', sans-serif;
           img {
             display: block;
             width: 100%;
-            max-width: 830px;
+            max-width: 500px;
             margin: 0 auto;
           }
         }
@@ -169,5 +169,35 @@ $fonts: 'Roboto', sans-serif;
   }
   100% {
     width: 250px;
+  }
+}
+
+@media(min-width: 1400px) {
+  .portfolio article .wrapper {
+    figure {
+      a img {
+      }
+      figcaption h4 {
+        font-size: 1.2rem;
+      }
+      figcaption p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+@media(min-width: 1400px) {
+  .portfolio article .wrapper {
+    align-items: flex-start;
+    figure {
+      flex-basis: auto;
+      a img {
+        margin: 0 auto 0 0;
+      }
+      figcaption {
+        margin: 0 auto 0 0;
+        padding-left: 0;
+      }
+    }
   }
 }

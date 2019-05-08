@@ -288,11 +288,15 @@ $fonts: 'Roboto', sans-serif;
   }
 }
 
-// Insert FA external link icon after external link
-.development p a[target="_blank"]:after {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: .8rem;
-    color: $teal;
-    content: " \f35d";
+@media (min-width: 1300px) {
+  .development {
+    .text {
+      p {
+        font-size: 1.2rem;
+      }
+      ul {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }

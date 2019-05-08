@@ -9,6 +9,7 @@ $plum: #690A52;
 $fonts: 'Roboto', sans-serif;
 
 .about {
+  max-width: 1300px;
   h2 {
     padding: 1rem 1.5rem 1rem;
     font-family: $fonts;
@@ -65,5 +66,11 @@ $fonts: 'Roboto', sans-serif;
     max-width: 50%;
     padding-left: 5%;
     float: right;
+  }
+}
+
+@media(min-width: 1300px) {
+  .about article p {
+    font-size: 1.2rem;
   }
 }

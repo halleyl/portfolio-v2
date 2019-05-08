@@ -35,10 +35,13 @@ header {
     header a h1 img {
       width: 40%;
       margin: 25vh 30%; } }
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   header {
     background-image: url("../images/splash-hd.jpg");
-    height: 100vh; } }
+    height: 100vh; }
+    header a h1 img {
+      width: 30%;
+      margin: 25vh 30%; } }
 nav #hamburger {
   z-index: 3;
   width: 50px;
@@ -189,7 +192,7 @@ nav ul {
       display: block;
       width: 95%;
       max-width: 450px;
-      padding: 0 1rem 1rem 0; } }
+      padding: 1rem 1rem 2rem 0; } }
 .links {
   padding: 2rem; }
   .links figure {
@@ -258,5 +261,18 @@ footer {
 
   .container {
     padding-bottom: 0; } }
+@media (min-width: 1300px) {
+  .blurb {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin-right: 3rem; }
+
+  .links figure figcaption a h3 {
+    font-size: 1.75rem; }
+  .links figure figcaption a p {
+    font-size: 1.2rem; }
+
+  footer {
+    clear: both; } }
 
 /*# sourceMappingURL=index.css.map */

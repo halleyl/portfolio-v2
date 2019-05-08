@@ -284,11 +284,10 @@
     background-color: #EEEEEE; }
   100% {
     background-color: #07B8B6; } }
-.development p a[target="_blank"]:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-size: .8rem;
-  color: #07B8B6;
-  content: " \f35d"; }
+@media (min-width: 1300px) {
+  .development .text p {
+    font-size: 1.2rem; }
+  .development .text ul {
+    font-size: 1.2rem; } }
 
 /*# sourceMappingURL=dev.css.map */

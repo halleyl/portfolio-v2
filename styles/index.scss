@@ -69,10 +69,18 @@ header {
   }
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 1300px) {
   header {
     background-image: url('../images/splash-hd.jpg');
     height: 100vh;
+    a {
+      h1 {
+        img {
+          width: 30%;
+          margin: 25vh 30%;
+        }
+      }
+    }
   }
 }
 
@@ -232,7 +240,7 @@ nav {
       display: block;
       width: 95%;
       max-width: 450px;
-      padding: 0 1rem 1rem 0;
+      padding: 1rem 1rem 2rem 0;
     }
   }
 }
@@ -310,5 +318,26 @@ footer {
   }
   .container {
     padding-bottom: 0;
+  }
+}
+
+@media(min-width: 1300px) {
+  .blurb {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin-right: 3rem;
+    .lauren {
+    }
+  }
+  .links {  
+    figure figcaption a h3 {
+      font-size: 1.75rem;
+    }
+    figure figcaption a p {
+      font-size: 1.2rem;
+    }
+  }
+  footer {
+    clear: both;
   }
 }
