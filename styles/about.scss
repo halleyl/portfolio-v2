@@ -35,6 +35,12 @@ $fonts: 'Roboto', sans-serif;
       &:last-of-type {
         padding-bottom: 3.45rem;
       }
+      a {
+        color: $plum;
+        &:hover {
+          color: $teal;
+        }
+      }
     }
   }
 }

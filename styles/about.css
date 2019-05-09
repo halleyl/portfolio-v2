@@ -21,6 +21,10 @@
       padding: 1rem 2rem; }
       .about article p:last-of-type {
         padding-bottom: 3.45rem; }
+      .about article p a {
+        color: #690A52; }
+        .about article p a:hover {
+          color: #07B8B6; }
 
 @media (min-width: 640px) {
   .about article img {
