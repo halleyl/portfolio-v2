@@ -222,25 +222,34 @@ nav {
   font-family: $fonts;
   font-weight: 300;
   padding: 2rem 2rem 0;
-  .lauren {
-    display: none;
-  }
   p {
     padding-bottom: 1rem;
     color: $dkgray;
   }
 }
 
-@media(min-width: 750px) {
-  .blurb {
-    float: left;
-    width: 50%;
-    max-width: 450px;
-    .lauren {
+.photo {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .content {
+    column-count: 2;
+    .blurb {
+      break-inside: avoid;
+    }
+    .photo {
+      break-inside: avoid;
       display: block;
-      width: 95%;
-      max-width: 450px;
-      padding: 1rem 1rem 2rem 0;
+      .lauren {
+        width: 100%;
+        max-width: 450px;
+        padding: 1rem 2rem;
+      }
+    }
+    .links {
+      padding-left: 0;
+      break-inside: avoid;
     }
   }
 }
@@ -315,6 +324,7 @@ footer {
   footer {
     position: relative;
     bottom: 0;
+    clear: both;
   }
   .container {
     padding-bottom: 0;
@@ -322,21 +332,33 @@ footer {
 }
 
 @media(min-width: 1300px) {
-  .blurb {
-    font-size: 1.2rem;
-    max-width: 650px;
-    margin-right: 3rem;
-    .lauren {
+  .content {
+    display: flex;
+    flex-direction: row;
+    .blurb {
+      flex-basis: 30%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .photo {
+      flex-basis: 20%;
+      order: -1;
+      .lauren {
+      }
+    }
+    .links {
+      flex-basis: 50%;
+      padding-left: 2rem;
+      h3 {
+        font-size: 1.75rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
-  .links {  
-    figure figcaption a h3 {
-      font-size: 1.75rem;
-    }
-    figure figcaption a p {
-      font-size: 1.2rem;
-    }
-  }
+
   footer {
     clear: both;
   }
