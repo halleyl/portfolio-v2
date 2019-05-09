@@ -29,8 +29,8 @@
   .development .text .view {
     display: inline-block;
     text-align: center;
-    width: 12rem;
-    padding: .75rem 1rem;
+    width: 40%;
+    padding: .75rem 3%;
     font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
@@ -40,7 +40,10 @@
     text-decoration: none; }
     .development .text .view:first-of-type {
       margin-left: 2rem;
-      margin-right: 1rem; }
+      margin-right: auto; }
+    .development .text .view:last-of-type {
+      margin-left: auto;
+      margin-right: 2rem; }
     .development .text .view:hover {
       background-color: #07B8B6;
       -webkit-animation: buttonup .25s ease;
@@ -91,6 +94,8 @@
     .development .text {
       -ms-flex-preferred-size: 55%;
           flex-basis: 55%; }
+      .development .text .view {
+        width: 12rem; }
     .development .extras {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;

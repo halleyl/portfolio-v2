@@ -47,8 +47,8 @@ $fonts: 'Roboto', sans-serif;
     .view {
       display: inline-block;
       text-align: center;
-      width: 12rem;
-      padding: .75rem 1rem;
+      width: 40%;
+      padding: .75rem 3%;
       font-family: $fonts;
       font-size: 1.1rem;
       font-weight: 300;
@@ -58,7 +58,11 @@ $fonts: 'Roboto', sans-serif;
       text-decoration: none;
       &:first-of-type {
         margin-left: 2rem;
-        margin-right: 1rem;
+        margin-right: auto;
+      }
+      &:last-of-type {
+        margin-left: auto;
+        margin-right: 2rem;
       }
       &:hover {
         background-color: $teal;
@@ -104,6 +108,9 @@ $fonts: 'Roboto', sans-serif;
     }
     .text {
       flex-basis: 55%;
+      .view {
+        width: 12rem;
+      }
     }
     .extras {
       flex-basis: 100%;
